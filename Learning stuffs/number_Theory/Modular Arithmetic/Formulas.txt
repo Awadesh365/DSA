@@ -1,0 +1,10 @@
+// Formulas used in Modular Arithmetic
+
+1. (a+b) % M = ((a % M) + (b % M)) % M
+
+2.  (a*b) % M =((a % M) * (b % M)) % M
+
+3.  (a-b) % M =  ((a % M) - (b % M) + M)) % M // The Extra M is used to make the number always Positive
+
+4  (a/b) % M = ((a % M) * ((b ^-1) % M )) % M  
+

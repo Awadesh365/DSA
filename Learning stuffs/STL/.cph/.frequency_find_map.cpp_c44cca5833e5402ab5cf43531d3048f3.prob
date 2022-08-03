@@ -1,0 +1,1 @@
+{"name":"Local: frequency_find_map","url":"d:\\Implimentation\\STL\\frequency_find_map.cpp","tests":[{"id":1629222421261,"input":"8\nabc\ndef\nabc\nghi\njkl\nghi\nghi\nabc","output":"abc 3\ndef 1\nghi 3\njkl 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Implimentation\\STL\\frequency_find_map.cpp","group":"local","local":true}

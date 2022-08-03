@@ -1,0 +1,1 @@
+{"name":"Local: vector_with_string","url":"d:\\STL\\vector_with_string.cpp","tests":[{"id":1628845992695,"input":"5\nabcd\ndgfad\ndasdf\ngerfs\nfdasg","output":"size:5\nabcd dgfad dasdf gerfs fdasg"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\STL\\vector_with_string.cpp","group":"local","local":true}
