@@ -1,4 +1,5 @@
 // it returns the maximum sum of subarray from that array
+// https : // cp-algorithms.com/others/maximum_average_segment.html#algorithm-description
 #include <bits/stdc++.h>
 using namespace std;
 
