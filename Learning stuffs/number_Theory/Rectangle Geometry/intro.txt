@@ -1,0 +1,13 @@
+https://usaco.guide/bronze/rect-geo?lang=cpp
+
+Certain tasks show up often in rectangle geometry problems
+-> Finding The overlapping area of two or more rectangles based on their
+   coordinate points.
+-> Determining whether two rectangles intersect.
+
+NOTE-> Applicabale only to rectangles which have sides parallel to the coordinate axes.
+  A rectangle can be represented with 2 points: its top right corner and bottom left corner.
+  let top right corner be tr, and bottom left be bl.
+
+  let coordinate of tr be (tr_x,tr_y), and coordinate of bl be (bl_x,bl_y)
+
