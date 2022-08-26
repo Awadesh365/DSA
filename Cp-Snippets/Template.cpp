@@ -115,7 +115,7 @@ void solve()
 }
 int main()
 {
-   setIO("");
+   //setIO("");
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
@@ -126,6 +126,6 @@ int main()
     cin >> TESTS;
     while (TESTS--)
         solve();
-
+ 
     return 0;
 }
