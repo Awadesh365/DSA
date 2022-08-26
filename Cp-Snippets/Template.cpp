@@ -99,6 +99,15 @@ void _print(map<T, V> v)
 void precompute()
 {
 }
+void setIO(string s) {
+
+	ios_base::sync_with_stdio(0); cin.tie(0);
+
+	freopen((s+".in").c_str(),"r",stdin);
+
+	freopen((s+".out").c_str(),"w",stdout);
+
+}
 void solve()
 {
 
@@ -106,6 +115,7 @@ void solve()
 }
 int main()
 {
+   //setIO("");
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
@@ -116,6 +126,6 @@ int main()
     cin >> TESTS;
     while (TESTS--)
         solve();
-
+ 
     return 0;
 }
