@@ -1,7 +1,6 @@
 // Binary Exponentiation (Log(n)) complexity
 // a^b
 // references ---> https://cp-algorithms.com/algebra/binary-exp.html
-//   ---> https://www.youtube.com/watch?v=K8mJ27S72v0&list=PLauivoElc3giVROwL-6g9hO-LlSen_NaV&index=12
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
