@@ -23,16 +23,6 @@ int main()
      input and output of your problem is ThreeBalls.in and  ThreeBalls.out then you should add ThreeBalls inside Those quotation marks.
      eg setIO("ThreeBalls");
 */
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
-    // precompute();
-
-    // ll TESTS;
-    // cin >> TESTS;
-    // while (TESTS--)
-    solve();
 
     return 0;
 }
