@@ -2,7 +2,7 @@
 using namespace std;
 
 // distance[(x1​,y1​),(x2​,y2​)]^2=(x2​−x1​)^2+(y2​−y1​)^2
-
+// in this case we are finding the maximum Euclidean Distance between two point, when we have given two vectors or arrays
 int main()
 {
     int n;
