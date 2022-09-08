@@ -1,5 +1,5 @@
+// snippet cp
 /*  Awadesh Nautiyal  */
-// snippet-> cp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -94,38 +94,25 @@ void _print(map<T, V> v)
 }
 // END of Debugging
 /*--------------------------------------------*/
-#define N 1e6;
-
+const ll N = 1e6;
 void precompute()
 {
 }
-void setIO(string s) {
-
-	ios_base::sync_with_stdio(0); cin.tie(0);
-
-	freopen((s+".in").c_str(),"r",stdin);
-
-	freopen((s+".out").c_str(),"w",stdout);
-
-}
 void solve()
 {
-
-    debug("----------");
 }
 int main()
 {
-   //setIO("");
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
 
     // precompute();
 
-    ll TESTS;
-    cin >> TESTS;
-    while (TESTS--)
-        solve();
- 
+    // ll TESTS;
+    // cin >> TESTS;
+    // while (TESTS--)
+    solve();
+
     return 0;
 }
