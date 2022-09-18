@@ -1,5 +1,5 @@
 /*
-   print name 5 times
+   print name n times
    print linearly from 1 to n
    print from n to 1
    print linearly from 1 to n ( using backtracking)
@@ -9,48 +9,40 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int print_name(int n)
+int print_name(int i, int n)
 {
-    if (!n)
+    if (i > n)
         return 0;
 
     cout << "Awadesh" << endl;
-    n--;
-    print_name(n);
+    print_name(i + 1, n);
     return 0;
 }
-int print_n_to_1(int n)
+int print_from_1_to_n(int i, int n)
 {
-    if (!n)
+    if (i > n)
         return 0;
 
-    cout << n << endl;
-    n--;
-    print_n_to_1(n);
+    cout << i << " ";
+    print_from_1_to_n(i + 1, n);
     return 0;
 }
-int print_1_to_n(int n)
+int print_from_n_to_1(int i, int n)
 {
-    if (n > 10)
+    if (i < 1)
         return 0;
 
-    cout << n << endl;
-    n++;
-    print_1_to_n(n);
+    cout << i << " ";
+    print_from_n_to_1(i - 1, n);
     return 0;
 }
 int main()
 {
     int n = 10;
-    print_name(n);
+    print_name(1, n);
     cout << endl;
-
-    print_n_to_1(n);
+    print_from_1_to_n(1, n);
     cout << endl;
-
-    n = 1;
-    print_1_to_n(n);
-    cout << endl;
-
+    print_from_n_to_1(n, 1);
     return 0;
 }
