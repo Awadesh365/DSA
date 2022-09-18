@@ -2,9 +2,6 @@
    print name n times
    print linearly from 1 to n
    print from n to 1
-   print linearly from 1 to n ( using backtracking)
-   print n to 1 (usig backtracking)
-
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -15,7 +12,7 @@ int print_name(int i, int n)
         return 0;
 
     cout << "Awadesh" << endl;
-    print_name(i + 1, n);
+    print_name(i + 1, n); // change of parameters
     return 0;
 }
 int print_from_1_to_n(int i, int n)
