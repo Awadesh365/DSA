@@ -97,19 +97,41 @@ const ll N = 1e6;
 void precompute()
 {
 }
+ll attacking_knights(ll k)
+{
+    /*
+     the attacking knights will be all the knights which lie inside the 2 X 3 + 3 X 2 area within our
+      k X k cheesboard
+      in a 3 X 2 or 2 X 3 Area the number of attacking combinations will be 2,
+     */
+
+    /*
+    since the number of 3 X 2 area inside the k X k board will be horizontally(left,right) = (k-1) and vertically(up,down) = (k-2)
+    similarly the number of 2 X 3 area inside the k X k board will be horizontally (k-1) and Vertically will be (k-2)
+
+    and the attacking will be all_3X2 + all_2X3
+    */
+    ll hori_3X2 = (k - 1), verti_3X2 = (k - 2);
+    ll hori_2X3 = (k - 2), verti_2X3 = (k - 1);
+
+    ll all_3X2 = 2 * (hori_2X3 * verti_2X3);
+    ll all_2X3 = 2 * (hori_3X2 * verti_3X2);
+
+    return all_2X3 + all_3X2;
+}
+ll all_combinations(ll n)
+{
+    // here r=2, so we can simplify the formula
+    // nCr =n!/r!*(n-r)!  = (n^2*(n^2-1))/2
+    return ((n * n) * ((n * n) - 1)) / 2;
+}
 void solve()
 {
-    ll y, x;
-    cin >> y >> x;
+    ll n;
+    cin >> n;
 
-    ll check = max(y, x);
-    ll ans = (check * (check - 1)) + 1;
-    if (check % 2 == 0)
-        ans += y - x;
-    else
-        ans += x - y;
-
-    cout << ans << endl;
+    for (ll i = 1; i < n + 1; i++)
+        cout << all_combinations(i) - attacking_knights(i) << endl;
 }
 int main()
 {
@@ -119,10 +141,10 @@ int main()
 
     // precompute();
 
-    ll TESTS;
-    cin >> TESTS;
-    while (TESTS--)
-        solve();
+    // ll TESTS;
+    // cin >> TESTS;
+    // while (TESTS--)
+    solve();
 
     return 0;
 }
