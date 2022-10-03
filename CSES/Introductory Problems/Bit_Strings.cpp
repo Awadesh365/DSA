@@ -102,8 +102,16 @@ const long long mod = 1e9 + 7;
 ll modpow(ll b, ll e)
 {
     ll ans = 1;
-    for (; e > 0; e >>= 1) // needs to find out what's happening in this loop
+    /*
+     In This case, we don't have a, so This loop does nothing at the start.
+     then c is (e >>= 1) which is short for (e = e >> 1), right shift e by one bit.
+      It is basically divining e by 2 at every loop (throwing out remainders)
+    */
+    for (;; e >>= 1) // or for (;; e /= 2) or  for(;e>0;e>>=1) or for(;;e= e >> 1)
     {
+        if (e <= 0)
+            break;
+
         if (e & 1)
             ans = (ans * b) % mod;
         b = (b * b) % mod;
