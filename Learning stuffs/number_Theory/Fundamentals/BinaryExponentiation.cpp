@@ -5,7 +5,7 @@
       It is basically divining e by 2 at every loop (throwing out remainders)
     */
 
-ll modpow(ll b, ll e)
+ll binpow(ll b, ll e)
 {
     ll ans = 1;
 
