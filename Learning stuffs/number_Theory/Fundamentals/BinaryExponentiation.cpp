@@ -1,44 +1,19 @@
-// Binary Exponentiation (Log(n)) complexity
-// a^b
-// references ---> https://cp-algorithms.com/algebra/binary-exp.html
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
-const ll MOD = 1e9 + 7;
-
-// Binary Exponentiation Iterative Approach. (Recommended)
-ll BinPow(ll a, ll b)
+ll modpow(ll b, ll e)
 {
-    a %= MOD;
-    ll result = 1;
-    while (b > 0)
+    ll ans = 1;
+    /*
+     In This case, we don't have a, so This loop does nothing at the start.
+     then c is (e >>= 1) which is short for (e = e >> 1), right shift e by one bit.
+      It is basically divining e by 2 at every loop (throwing out remainders)
+    */
+    for (;; e >>= 1) // or for (;; e /= 2) or  for(;e>0;e>>=1) or for(;;e= e >> 1)
     {
-        if (b & 1)
-            result = (result * a) % MOD;
+        if (e <= 0)
+            break;
 
-        a = a * a;
-        b = (b >> 1);
+        if (e & 1)
+            ans = (ans * b) % mod;
+        b = (b * b) % mod;
     }
-    return result;
-}
-
-// Binary Exponentiation Recursive Approach. (Not Recommended) <-- slow as compare to Iterative one
-ll BinPowRecur(ll a, ll b)
-{
-    if (b == 0)
-        return 1;
-
-    ll result = BinPowRecur(a, b / 2);
-    if (b & 1)
-        return ((a * result * result) % MOD) % MOD;
-
-    return (result * result) % MOD;
-}
-
-int main()
-{
-    ll a = 2, b = 13;
-    cout << BinPow(a, b) << endl;
-
-    return 0;
+    return ans;
 }

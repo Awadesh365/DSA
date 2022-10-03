@@ -118,7 +118,6 @@ ll modpow(ll b, ll e)
     }
     return ans;
 }
-
 void solve()
 {
     ll n;
