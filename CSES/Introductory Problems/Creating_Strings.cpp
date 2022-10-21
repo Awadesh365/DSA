@@ -102,6 +102,16 @@ void solve()
     string s;
     cin >> s;
     // all possible ways, by which we can represent theat string.
+
+    sort(s.begin(), s.end());
+    vector<string> perms;
+    perms.push_back(s);
+    while (next_permutation(s.begin(), s.end()))
+        perms.push_back(s);
+
+    cout << perms.size() << endl;
+    for (auto &it : perms)
+        cout << it << endl;
 }
 int main()
 {
