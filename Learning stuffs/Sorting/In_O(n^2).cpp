@@ -1,6 +1,8 @@
 /*
 Awadesh Nautiyal
  in O(n^2) algorithms includes bubble sort,insersion sort, and selection sort algorithm.
+
+ ref:
  https://csacademy.com/lesson/sorting/
  https://usaco.guide/bronze/intro-sorting?lang=cpp
 https://www.geeksforgeeks.org/sorting-algorithms/
