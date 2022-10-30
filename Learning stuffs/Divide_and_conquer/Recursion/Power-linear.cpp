@@ -1,3 +1,5 @@
+// finding the the x^n in linear time complexity i.e in O(n) time.
+
 #include <iostream>
 using namespace std;
 
