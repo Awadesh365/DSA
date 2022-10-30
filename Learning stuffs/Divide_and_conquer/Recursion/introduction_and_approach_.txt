@@ -2,9 +2,6 @@ For recursion there are two stages are there:-
  1. The Three parts of High level thinking 
  2. The Two parts of Low level thinking.
 
- image.png
-
-
 it is just like/ application of PMI(Principle of mathematical introduction)
 
 for more details:-
