@@ -111,6 +111,13 @@ void precompute()
 }
 void solve()
 {
+    ll k, n;
+    cin >> k >> n;
+    while (n--)
+    {
+        ll x;
+        cin >> x;
+    }
 }
 int main()
 {
