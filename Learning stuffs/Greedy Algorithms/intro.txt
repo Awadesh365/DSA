@@ -1,0 +1,2 @@
+
+greedy:- Selecting the choice that seems to be the best at the moment at every step of your algorithm
