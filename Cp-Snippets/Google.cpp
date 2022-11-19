@@ -96,9 +96,6 @@ void _print(map<T, V> v)
 /*--------------------------------------------*/
 #define N 1e6;
 
-void precompute()
-{
-}
 int solve(ll TESTS)
 {
     for (ll i = 0; i < TESTS; i++)

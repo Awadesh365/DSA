@@ -95,9 +95,6 @@ void _print(map<T, V> v)
 // END of Debugging
 /*--------------------------------------------*/
 const ll N = 1e6;
-void precompute()
-{
-}
 void solve()
 {
 }

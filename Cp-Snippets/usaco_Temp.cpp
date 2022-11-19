@@ -106,9 +106,6 @@ void setIO(string name = "")
 }
 
 const ll N = 1e6;
-void precompute()
-{
-}
 void solve()
 {
 }
