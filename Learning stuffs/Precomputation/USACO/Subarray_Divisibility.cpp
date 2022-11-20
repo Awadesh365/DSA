@@ -114,7 +114,7 @@ void solve()
         psums += a;
 
         // considering the negative sums as well
-        m[(psums % n + n) % n]++; // we are doning this insted of m[psums%n] <- this considers only positives so that's why this is getting avoidence
+        m[(psums % n + n) % n]++; // we are doning this instead of m[psums%n] <- this considers only positives so that's why this is getting avoidence
     }
 
     ll ans = 0;
