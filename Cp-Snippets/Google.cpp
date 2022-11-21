@@ -110,8 +110,6 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    // precompute();
-
     ll TESTS;
     cin >> TESTS;
     solve(TESTS);

@@ -1,6 +1,6 @@
-// snippet cp
 /*  Awadesh Nautiyal  */
 #include <bits/stdc++.h>
+#include <cstdio>
 using namespace std;
 
 typedef long long ll;
@@ -94,15 +94,34 @@ void _print(map<T, V> v)
 }
 // END of Debugging
 /*--------------------------------------------*/
+void setIO(string name = "")
+{ // FastIO see General -> Fast Input and Output
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    if (name.size())
+    {
+        freopen((name + ".in").c_str(), "r", stdin);
+        freopen((name + ".out").c_str(), "w", stdout);
+    }
+}
+
 const ll N = 1e6;
 void solve()
 {
+    ll n, k, b;
+    cin >> n >> k >> b;
+    vector<ll> arr(b);
+    for (auto &it : arr)
+        cin >> it;
 }
 int main()
 {
+    // setIO("");
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
+
+    // precompute();
 
     // ll TESTS;
     // cin >> TESTS;

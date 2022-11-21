@@ -116,8 +116,6 @@ int main()
     cin.tie(nullptr);
     cout.tie(nullptr);
 
-    // precompute();
-
     // ll TESTS;
     // cin >> TESTS;
     // while (TESTS--)
