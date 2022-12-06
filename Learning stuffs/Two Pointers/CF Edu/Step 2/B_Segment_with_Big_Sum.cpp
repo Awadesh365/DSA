@@ -113,7 +113,7 @@ void solve()
         while (sum - a[l] >= s)
             sum -= a[l], l++;
 
-        if (sum >= s) // we are not considering the sum smaller that s.
+        if (sum >= s) // we are not considering the sum smaller than s.
             ans = min(ans, (r - l + 1));
     }
     if (ans == mx) // if no such ans exist
