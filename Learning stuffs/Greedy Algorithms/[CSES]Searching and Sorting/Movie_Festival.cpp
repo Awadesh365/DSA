@@ -116,7 +116,7 @@ void solve()
         if (start <= arr[i].second)
         {
             ans++;
-            start = arr[i].first; /* after we have wathed the fist movie, we are going to watch this movie, so we are now
+            start = arr[i].first; /* after we have watched the fist movie, we are going to watch this movie, so we are now
                      concern about the ending time of the present movie,
                     so we have updated the ending time of the movie, so that we can check it to some other interval.*/
         }
