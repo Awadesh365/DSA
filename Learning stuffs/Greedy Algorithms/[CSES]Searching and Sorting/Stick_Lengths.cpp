@@ -103,7 +103,7 @@ void solve()
         cin >> it;
 
     sort(p.begin(), p.end());
-    ll median = p[n / 2]; // 50 % of the data is smalller than this and 50 % of the data is greater than this.
+    ll median = p[n / 2]; // 50 % of the data is smaller than this and 50 % of the data is greater than this.
 
     ll ans = 0;
     for (auto &it : p)
