@@ -119,34 +119,19 @@ void solve()
     sort(a.begin(), a.end());
     sort(b.begin(), b.end());
 
-    ll cnt = 0;
-
-    vector<ll> exist_i, exist_j;
-
-    for (ll i = 0; i < n; i++)
+    ll ans = 0;
+    ll i = 0, j = 0;
+    while (i < n && j < m)
     {
-        for (ll j = 0; j < m; j++)
-        {
-            if (i != j)
-            {
-                if (abs(a[i] - a[j]) <= k)
-                {
-                    bool check1 = is_exist(i, exist_i);
-                    bool check2 = is_exist(j, exist_j);
-
-                    if (!check1 && !check2)
-                    {
-                        cnt++;
-
-                        exist_i.push_back(i);
-                        exist_j.push_back(j);
-                    }
-                }
-            }
-        }
+        if (a[i] - k > b[j])
+            j++;
+        else if (a[i] + k < b[j])
+            i++;
+        else
+            i++, j++, ans++;
     }
 
-    cout << cnt << endl;
+    cout << ans << endl;
 }
 int main()
 {
