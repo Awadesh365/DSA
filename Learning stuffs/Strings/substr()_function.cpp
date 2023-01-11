@@ -3,16 +3,16 @@ using namespace std;
 
 int main()
 {
-    string s = "GoodToSeeYou";
-    // starting from 0 and going to 1, not including the 2nd index.
-    string a = s.substr(0, 2);
+    string a = "Welcomerstuv";
 
-    int x = 3;
-    string b = s.substr(1, x); // starting from 1 index and going till before x, not including x, i.e exclusive.
+    int pos = 1;
+    // copy the substring from indext pos +1 to the last of the string.
+    cout << a.substr(pos + 1) << endl; // prints "elcomerstuv"
 
-    cout << a << " " << b << endl;
-    cout << "-----------" << endl;
-    cout << s.substr(x - 3) << endl;
+    // from index 0, copy next three elements in the string
+    cout << a.substr(0, 3) << endl; // prints wel
 
+    // from index 3, copy next three charaters in the string
+    cout << a.substr(3, 3) << endl; // prints com
     return 0;
 }
