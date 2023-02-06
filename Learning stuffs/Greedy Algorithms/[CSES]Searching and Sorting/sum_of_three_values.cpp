@@ -113,6 +113,7 @@ void solve()
         cin >> a;
         v.push_back({a, (i + 1)});
     }
+
     sort(v.begin(), v.end());
     for (ll i = 0; i < n; i++)
     {
