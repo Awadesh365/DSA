@@ -1,1 +1,0 @@
-{"name":"Local: multimap","url":"c:\\Users\\AWADESH\\OneDrive\\DSA\\Learning stuffs\\STL\\Maps\\multimap.cpp","tests":[{"id":1656846570072,"input":"5\ndjk 1\nscd 2\nscd 3\nscd 4\ndjk 8","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\AWADESH\\OneDrive\\DSA\\Learning stuffs\\STL\\Maps\\multimap.cpp","group":"local","local":true}

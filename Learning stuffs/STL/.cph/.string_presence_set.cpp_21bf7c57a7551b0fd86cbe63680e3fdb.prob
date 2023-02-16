@@ -1,1 +1,0 @@
-{"name":"Local: string_presence_set","url":"d:\\Implimentation\\STL\\string_presence_set.cpp","tests":[{"id":1630221193661,"input":"8\nabc\ndef\nabc\nghi\njkl\nghi\nghi\nabc\nkcd\navd\n3\nabc\ndef\nlkdfs","output":"yes\nyes\nno"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Implimentation\\STL\\string_presence_set.cpp","group":"local","local":true}

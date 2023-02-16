@@ -1,1 +1,0 @@
-{"name":"Local: nested_vectors","url":"d:\\STL\\nested_vectors.cpp","tests":[{"id":1628914173794,"input":"5\n23 43\n12 34\n23 65\n23 74\n76 98","output":"size:5\n23 43\n12 34\n23 65\n23 74\n76 98"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\STL\\nested_vectors.cpp","group":"local","local":true}

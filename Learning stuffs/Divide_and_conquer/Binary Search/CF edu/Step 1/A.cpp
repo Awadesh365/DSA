@@ -93,61 +93,25 @@ void _print(map<T, V> v)
 }
 // END of Debugging
 /*--------------------------------------------*/
-/* stuff you should look for By -> Benq
- * int overflow, array bounds
- * special cases (n=1?)
- * do smth instead of nothing and stay organized
- * WRITE STUFF DOWN
- * DON'T GET STUCK ON ONE APPROACH
- */
-const ll N = 1e6;
+#define N 1e6;
 
-void solve()
+int solve(ll TESTS)
 {
-    int n, k;
-    cin >> n >> k;
-
-    vector<int> arr(n);
-    for (auto &it : arr)
-        cin >> it;
-
-    while (k--)
+    for (ll i = 0; i < TESTS; i++)
     {
-        int key;
-        cin >> key;
-
-        int l = 0, r = (n - 1);
-        bool ans = false;
-
-        while (r >= l)
-        {
-            int mid = (l + r) / 2;
-            if (arr[mid] == key)
-            {
-                ans = true;
-                break;
-            }
-            else if (key < arr[mid])
-                r = (mid - 1);
-            else
-                l = (mid + 1);
-        }
-        if (ans)
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;
+        cout << "Case #" << i + 1 << ": ";
     }
+    return 0;
 }
 int main()
 {
     ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
-    // ll TESTS;
-    // cin >> TESTS;
-    // while (TESTS--)
-    solve();
+    ll TESTS;
+    cin >> TESTS;
+    solve(TESTS);
 
     return 0;
 }

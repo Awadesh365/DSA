@@ -1,1 +1,0 @@
-{"name":"Local: vector_of_vectors","url":"d:\\Implimentation\\STL\\vector_of_vectors.cpp","tests":[{"id":1628948746259,"input":"3\n3\n1 2 3\n3\n3 4 5\n2\n1 2","output":"3\n1 2 3\n3\n3 4 5\n2\n1 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Implimentation\\STL\\vector_of_vectors.cpp","group":"local","local":true}

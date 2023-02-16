@@ -1,1 +1,0 @@
-{"name":"Local: lexo_string","url":"d:\\Implimentation\\STL\\lexo_string.cpp","tests":[{"id":1630220703018,"input":"8\nabc\ndef\nabc\nghi\njkl\nghi\nghi\nabc\nkcd\navd","output":"abc\ndef\nghi\njkl"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Implimentation\\STL\\lexo_string.cpp","group":"local","local":true}
