@@ -1,5 +1,4 @@
-/*  Awadesh Nautiyal  */
-// snippet -> Google
+/*  Awadesh */
 #include <bits/stdc++.h>
 using namespace std;
 
