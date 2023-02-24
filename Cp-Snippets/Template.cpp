@@ -1,5 +1,4 @@
-// snippet cp
-/*  Awadesh Nautiyal  */
+/*  Awadesh */
 #include <bits/stdc++.h>
 using namespace std;
 
