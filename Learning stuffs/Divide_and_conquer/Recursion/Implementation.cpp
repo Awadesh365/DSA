@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int N = 18;
+const int N = 1e3+5;
 vector<long long> fact(N);
 
 // dp
