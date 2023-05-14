@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// understanding patterns and using it in problems
 void subseq(vector<int> &ans, vector<int> arr, int idx, int sz)
 {
     if (idx == sz)
