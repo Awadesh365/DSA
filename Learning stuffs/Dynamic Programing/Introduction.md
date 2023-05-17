@@ -3,13 +3,11 @@
 @Sample
 
 ```cpp
-#include<bits.stdc++.h>
-using namespace std;
+int Recr(int n)
+{
+    if (n <= 1)
+        return n;
 
-int main(){
-
-
-
-
-
+    return Recr(n - 1) + Recr(n - 2);
+}
 ```
