@@ -1,0 +1,11 @@
+vector<int> DeciToBin(int decimal, vector<int> result)
+{
+    if (decimal == 0){
+        reverse(result.begin(), result.end());
+        return result;
+    }
+
+    result.push_back((decimal % 2));
+    decimal = (decimal / 2);
+    return DeciToBin(decimal, result);
+}
